@@ -14,7 +14,7 @@ app.use("/api", router);
 app.get("/", (req, res) => {
   res.send("Hello");
 });
-app.listen(process.env.PORT, process.env.HOST, () => {
+app.listen(process.env.PORT, () => {
   console.log(
     `⚡Server listening at http://${process.env.HOST}:${process.env.PORT}`
   );
